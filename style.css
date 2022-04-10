@@ -88,11 +88,12 @@
 
 .items{
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   margin-left: 16%;
   margin-top: 12%;
   height: 81%;
   width: 70%;
+  font-family: 'Beau Rivage', cursive;
 }
 
 .item{

@@ -48,7 +48,6 @@ document.getElementById("buy").addEventListener("click", function() {
     }
   }
 
-  console.log(total);
   document.getElementById("total").innerHTML = "Total........." + total;
   document.getElementById("total").style.visibility = "visible";
   const img = document.createElement('img');
@@ -57,6 +56,10 @@ document.getElementById("buy").addEventListener("click", function() {
   img.style.width = "20%";
   img.style.marginLeft = "24%";
   document.getElementsByClassName("middle")[0].prepend(img);
+  for(var i=0;i<5;i++){
+    document.querySelectorAll(".btn")[i].disabled = true;
+  }
+  document.getElementById("buy").disabled = true;
 });
 
 function modifyItem(getButton){
